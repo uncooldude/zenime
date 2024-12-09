@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import tailwindcssAnimate from 'tailwindcss-animate';
-
 export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -14,7 +12,7 @@ export default {
       screens: {
         "custom-md": "600px",
         "custom-xl": "1200px",
-        "ultra-wide": "1660px",
+        "ultra-wide":"1660px",
       },
       colors: {
         background: "hsl(var(--background))",
@@ -60,5 +58,5 @@ export default {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [require("tailwindcss-animate")],
 };
